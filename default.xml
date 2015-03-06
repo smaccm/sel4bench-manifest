@@ -12,6 +12,10 @@
 
 <manifest>
 <remote name="seL4"
+fetch="../seL4"
+/>
+
+<remote name="smaccm"
 fetch="."
 />
 
@@ -38,7 +42,7 @@ remote="seL4"
 <project name="libplatsupport.git" path="libs/libplatsupport"/>
 <project name="libutils.git" path="libs/libutils"/>
 <project name="libsel4bench.git" path="libs/libsel4bench"/>
-<project name="sel4bench.git" path="projects/sel4bench">
+<project name="sel4bench.git" path="projects/sel4bench" remote="smaccm" revision="master">
     <linkfile src="Makefile" dest="Makefile"/>
     <linkfile src="Kbuild" dest="Kbuild"/>
     <linkfile src="Kconfig" dest="Kconfig"/>
